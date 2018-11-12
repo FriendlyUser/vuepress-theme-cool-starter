@@ -8,13 +8,16 @@
 </template>
 
 <script>
- //import Styles from './Styles'
+// import 'vue-good-table/dist/vue-good-table.css'
+import { VueGoodTable } from 'vue-good-table';
+
 export default {
   name: 'my-component',
-  //components: {
-  //  Styles,
-  //},
+
   // add to component
+  components: {
+    VueGoodTable,
+  },
   data(){
     return {
       columns: [
