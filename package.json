@@ -1,6 +1,6 @@
 {
   "name": "vuepress-theme-cool-starter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "index.js",
   "description": "A cool theme that has integrated some vue components, charts via charts, and markdown based diagrams plantuml and mermaid.",
   "repository": "https://github.com/FriendlyUser/vuepress-theme-cool-starter",
@@ -14,6 +14,7 @@
     "chart.js": "^2.7.2",
     "markdown-it-admonition": "^1.0.4",
     "markdown-it-task-lists": "^2.1.1",
+	"vue-cute-timeline": "^1.2.5",
     "vuepress": "^0.12.0",
     "vuepress-theme-cool": "^0.1.6"
   }

@@ -1,4 +1,4 @@
-// .vuepress/components/sample-timeline.vue
+// .vuepress/components/timeline.vue
 <template>
   <timeline timeline-theme="lightblue">
     <timeline-title bg-color="#09FFAA">Road to Graduation</timeline-title>
@@ -25,6 +25,7 @@
 import { Timeline, TimelineItem, TimelineTitle } from 'vue-cute-timeline'
  
 export default {
+  name: 'timeline',
   components: {
     Timeline,
     TimelineItem,

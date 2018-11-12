@@ -1,4 +1,5 @@
-## ReadMe
+[![Build Status](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter.svg?branch=master)](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter)
+## ReadMe 
 
 This is an example of how to use the `vuepress-theme-cool` vuepress theme, look into docs for example files.
 

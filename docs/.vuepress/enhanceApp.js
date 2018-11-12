@@ -1,7 +1,5 @@
 import Vuex from 'vuex'
-//import './timetableStyles.css'
-//import timetable from 'vue-timetable'
-//Vue.use(timetable)
+
 import VueChartkick from 'vue-chartkick'
 import Chart from 'chart.js'
 import VueGoodTablePlugin from 'vue-good-table';
