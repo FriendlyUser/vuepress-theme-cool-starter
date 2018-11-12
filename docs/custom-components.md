@@ -4,7 +4,7 @@ title: Custom Components
 
 # Tables
 
-<my-component />
+<my-component/>
 
 ## Table Component Code
 
@@ -82,7 +82,7 @@ export default {
 
 An example timeline of the courses I took
 
-<sample-timeline />
+<sample-timeline/>
 
 Nice timeline :rocket:
 

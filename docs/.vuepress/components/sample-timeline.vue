@@ -29,7 +29,7 @@ export default {
   components: {
     Timeline,
     TimelineItem,
-    TimelineTitle
+    TimelineTitle,
   }
 }
 </script>
