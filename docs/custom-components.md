@@ -82,8 +82,10 @@ export default {
 
 An example timeline of the courses I took
 
-<timeline />
---- 
+<sample-timeline />
+
+Nice timeline :rocket:
+
 
 ## Admonition Task List 
 
