@@ -82,6 +82,7 @@ export default {
 
 An example timeline of the courses I took
 
+<timeline />
 --- 
 
 ## Admonition Task List 
