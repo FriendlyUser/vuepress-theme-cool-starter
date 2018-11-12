@@ -8,9 +8,12 @@
 </template>
 
 <script>
-import Styles from './Styles'
+ //import Styles from './Styles'
 export default {
   name: 'my-component',
+  //components: {
+  //  Styles,
+  //},
   // add to component
   data(){
     return {
