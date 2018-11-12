@@ -15,6 +15,6 @@
     "markdown-it-admonition": "^1.0.4",
     "markdown-it-task-lists": "^2.1.1",
     "vuepress": "^0.12.0",
-    "vuepress-theme-cool": "^0.1.5"
+    "vuepress-theme-cool": "^0.1.6"
   }
 }
