@@ -1,0 +1,42 @@
+image: node:9.11.1
+
+stages:
+  - deploy
+  - deployPages
+  
+gitlabPages:
+  stage: deploy
+  cache:
+    paths:
+    - node_modules/
+  script:
+  - yarn install
+  - yarn docs:build
+  - mv docs/.vuepress/dist public
+  - ls
+  - echo "Highly unlikely their is gitlab pages, because I am using gitlab for CI/CD"
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
+
+    
+githubPages:
+  stage: deploy
+  script:
+    - yarn install
+    - yarn docs:build
+    # navigate into the build output directory
+    - cd docs/.vuepress/dist
+    # if you are deploying to a custom domain
+    # echo 'www.example.com' > CNAME
+    - git init
+    - git add -A
+    - git config user.email "pandabeareee@gmail.com"
+    - git config --global user.name "FriendlyUser"
+    - git commit -m "Build from $CI_SERVER_NAME $CI_PIPELINE_ID"
+    - git push -f https://FriendlyUser:$GITHUB_ACCESS_TOKEN@github.com/FriendlyUser/ENGRYear4BNotes.git master:gh-pages
+  only:
+    - master
+    

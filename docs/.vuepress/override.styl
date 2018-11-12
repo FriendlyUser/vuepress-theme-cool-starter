@@ -1,0 +1,89 @@
+// showing default values
+$accentColor = #0984e3
+$textColor = #2c3e50
+$borderColor = #eaecef
+$codeBgColor = #282c34
+
+$admonition
+    box-shadow 0 2px 2px 0 rgba(0,0,0,.14),0 1px 5px 0 rgba(0,0,0,.12),0 3px 1px -2px rgba(0,0,0,.2)
+    position relative
+    margin 1.5625em 0
+    padding 0 1.2rem
+    border-left .4rem solid #448aff
+    border-radius .2rem
+    overflow auto
+
+html .admonition>:last-child
+    margin-bottom 1.2rem
+
+.admonition .admonition
+    margin 1em 0
+
+.admonition p
+    margin-top: 0.5em
+
+$admonition-icon
+    position absolute
+    left 1.2rem
+    font-family: "Material Icons"
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+
+$admonition-title
+    margin 0 -1.2rem
+    padding .8rem 1.2rem .8rem 4rem
+    border-bottom .1rem solid rgba(68,138,255,.1)
+    background-color rgba(68,138,255,.1)
+    font-weight 700
+
+.admonition>.admonition-title:last-child
+    margin-bottom 0
+    
+admonition_types = {
+    note: {color: #0288D1, icon: "edit_sharp"},
+    abstract: {color: #c5d845, icon: "speaker_notes_filled"},
+    info: {color: #19d8f5, icon: "info"}
+    tip: {color: #00bfa5, icon: "code"},
+    success: {color: #00c853, icon: "check_circle_outline"},
+    question: {color: #64dd17, icon: "help"},
+    warning: {color: #ff9100, icon: "warning"},
+    failure: {color: #ff5252, icon: "close"},
+    danger: {color: #c2185b, icon: "flash_on"},
+    bug: {color: #e040fb, icon: "bug_report"},
+    example: {color: #651fff, icon: "format_list_numbered_rtl"},
+    quote: {color: #9e9e9e, icon: "format_quote"}
+}
+
+for name, val in admonition_types
+    .admonition.{name}
+        @extend $admonition
+        border-left-color: val[color]
+    
+    .admonition.{name}>.admonition-title
+        @extend $admonition-title
+        border-bottom-color: .1rem solid rgba(val[color], 0.2)
+        background-color: rgba(val[color], 0.2)
+
+    .admonition.{name}>.admonition-title:before
+        @extend $admonition-icon
+        color: val[color]
+        content: val[icon]

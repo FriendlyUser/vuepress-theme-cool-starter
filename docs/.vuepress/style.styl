@@ -1,0 +1,155 @@
+    @import url(https://fonts.googleapis.com/icon?family=Material+Icons)
+    .admonition.note,
+    .admonition.hint,
+    .admonition.danger,
+    .admonition.caution,
+    .admonition.error,
+    .admonition.attention {
+        box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+        position: relative;
+        margin: 1.5625em 0;
+        padding: 0 1.2rem;
+        border-left: 0.4rem solid #448aff;
+        border-radius: 0.2rem;
+        overflow: auto;
+    }
+
+    html .admonition>:last-child {
+        margin-bottom: 1.2rem;
+    }
+
+    .admonition .admonition {
+        margin: 1em 0;
+    }
+
+    .admonition p {
+        margin-top: 0.5em;
+    }
+
+    .admonition.note>.admonition-title:before,
+    .admonition.hint>.admonition-title:before,
+    .admonition.danger>.admonition-title:before,
+    .admonition.caution>.admonition-title:before,
+    .admonition.error>.admonition-title:before,
+    .admonition.attention>.admonition-title:before {
+        position: absolute;
+        left: 1.2rem;
+        font-family: "Material Icons";
+        font-size: 24px;
+        display: inline-block;
+        line-height: 1;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+    /* Support for all WebKit browsers. */
+        -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+        text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+        -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+        font-feature-settings: 'liga';
+    }
+
+    .admonition.note>.admonition-title,
+    .admonition.hint>.admonition-title,
+    .admonition.danger>.admonition-title,
+    .admonition.caution>.admonition-title,
+    .admonition.error>.admonition-title,
+    .admonition.attention>.admonition-title {
+        margin: 0 -1.2rem;
+        padding: 0.8rem 1.2rem 0.8rem 4rem;
+        border-bottom: 0.1rem solid rgba(68,138,255,0.1);
+        background-color: rgba(68,138,255,0.1);
+        font-weight: 700;
+    }
+
+    .admonition>.admonition-title:last-child {
+        margin-bottom: 0;
+    }
+
+    .admonition.note {
+        border-left-color: #448aff;
+    }
+
+    .admonition.note>.admonition-title {
+        border-bottom-color: 0.1rem solid rgba(68,138,255,0.1);
+        background-color: rgba(68,138,255,0.1);
+    }
+
+    .admonition.note>.admonition-title:before {
+        color: #448aff;
+        content: "note";
+    }
+
+    .admonition.hint {
+        border-left-color: #00bfa5;
+    }
+
+    .admonition.hint>.admonition-title {
+        border-bottom-color: 0.1rem solid rgba(0,191,165,0.1);
+        background-color: rgba(0,191,165,0.1);
+    }
+
+    .admonition.hint>.admonition-title:before {
+        color: #00bfa5;
+        content: "info";
+    }
+
+    .admonition.danger {
+        border-left-color: #ff1744;
+    }
+
+    .admonition.danger>.admonition-title {
+        border-bottom-color: 0.1rem solid rgba(255,23,68,0.1);
+        background-color: rgba(255,23,68,0.1);
+    }
+
+    .admonition.danger>.admonition-title:before {
+        color: #ff1744;
+        content: "block";
+    }
+
+    .admonition.caution {
+        border-left-color: #ff9100;
+    }
+
+    .admonition.caution>.admonition-title {
+        border-bottom-color: 0.1rem solid rgba(255,145,0,0.1);
+        background-color: rgba(255,145,0,0.1);
+    }
+
+    .admonition.caution>.admonition-title:before {
+        color: #ff9100;
+        content: "warning";
+    }
+
+    .admonition.error {
+        border-left-color: #ff1744;
+    }
+
+    .admonition.error>.admonition-title {
+        border-bottom-color: 0.1rem solid rgba(255,23,68,0.1);
+        background-color: rgba(255,23,68,0.1);
+    }
+
+    .admonition.error>.admonition-title:before {
+        color: #ff1744;
+        content: "error";
+    }
+
+    .admonition.attention {
+        border-left-color: #64dd17;
+    }
+
+    .admonition.attention>.admonition-title {
+        border-bottom-color: 0.1rem solid rgba(100,221,23,0.1);
+        background-color: rgba(100,221,23,0.1);
+    }
+
+    .admonition.attention>.admonition-title:before {
+        color: #64dd17;
+        content: "priority_high";
+    }
