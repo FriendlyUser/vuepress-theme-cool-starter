@@ -87,8 +87,44 @@ An example timeline of the courses I took
 Nice timeline :rocket:
 
 
+
+## Comparsion 
+
+```js
+<pros-cons
+  intro="There are a couple of things we need to cover:"
+  :good="[
+    'Documentation Theme Based on Vue.',
+    'Use of markdown-it plugins.',
+    'Static Site Generator.'
+  ]"
+  :bad="[
+    'Vuepress is not very stable yet',
+    'Can be complex to configure',
+  ]"
+/>
+```
+<pros-cons
+  intro="There are a couple of things we need to cover:"
+  :good="[
+    'Documentation Theme Based on Vue.',
+    'Use of markdown-it plugins.',
+    'Static Site Generator.'
+  ]"
+  :bad="[
+    'Vuepress is not very stable yet',
+    'Can be complex to configure',
+  ]"
+/>
+
 ## Admonition Task List 
 
+Tasks can be made using 
+
+```
+- [ ] incomplete
+- [x] complete
+```
 
 !!! danger Major Backlog
 The tasks listed below are expected to be done by the end of the term ENGR 004, haha?.

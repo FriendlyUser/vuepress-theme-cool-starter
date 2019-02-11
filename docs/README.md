@@ -9,7 +9,7 @@ features:
   details: Leverage chartjs and katex 
 - title: Diagramming tools
   details: Integrated with mermaid and plantuml
-footer: MIT Licensed | Copyright © 2018-present David Li
+footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
 ## ReadMe
@@ -31,4 +31,4 @@ To run:
 
 Most of the customization is done in `config.js`, automatic navbar and sidebar navigation is available in `config-other.js`
 
-Some other good examples can be found at [vuepress-examples](https://vuepress-examples.netlify.com/)
+Some other good vuepress examples can be found at [vuepress-examples](https://vuepress-examples.netlify.com/)
