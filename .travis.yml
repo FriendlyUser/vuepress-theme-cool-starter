@@ -1,6 +1,10 @@
 language: node_js
 node_js:
     - "10"
+    - "7"
+    - "8"
+    - "9"
+    
 install:
     - npm install
 script:
@@ -10,13 +14,19 @@ cache:
         - "node_modules"
 notifications:
     email: true
-deploy:
-    provider: pages
-    skip-cleanup: true
-    local_dir: docs/.vuepress/dist
-    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: FriendlyUser/vuepress-theme-cool-starter
-    keep-history: true
-    target-branch: gh-pages
-    on:
-        branch: master
+
+jobs:
+  include:
+    - stage: docs release
+      node_js: "10"
+      script: echo "Deploying to npm ..."
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        local_dir: docs/.vuepress/dist
+        github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        repo: FriendlyUser/vuepress-theme-cool-starter
+        keep-history: true
+        target-branch: gh-pages
+        on:
+            branch: master
