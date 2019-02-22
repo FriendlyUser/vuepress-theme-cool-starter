@@ -3,7 +3,8 @@ language: node_js
 os:
   - linux
   - osx
-  - windows
+# One day windows will work
+#  - windows
   
 node_js:
     - "8"
@@ -25,7 +26,10 @@ jobs:
   include:
     - stage: docs release
       node_js: "10"
-      script: echo "Deploying to npm ..."
+      script: 
+        echo "Deploying to npm ..."
+        npm install
+        npm run docs:build
       deploy:
         provider: pages
         skip-cleanup: true
