@@ -27,9 +27,9 @@ jobs:
     - stage: docs release
       node_js: "10"
       script: 
-        echo "Deploying to npm ..."
-        npm install
-        npm run docs:build
+        - echo "Deploying to npm ..."
+        - npm install
+        - npm run docs:build
       deploy:
         provider: pages
         skip-cleanup: true
