@@ -15,7 +15,8 @@
     "markdown-it-admonition": "^1.0.4",
     "markdown-it-task-lists": "^2.1.1",
     "vue-cute-timeline": "^1.2.5",
-    "vuepress": "^0.12.0",
-    "vuepress-theme-cool": "^0.1.7"
+    "vuepress": "^0.14.0",
+    "vuepress-theme-cool": "^0.1.9",
+    "webpack-dev-middleware": "^3.6.0"
   }
 }
