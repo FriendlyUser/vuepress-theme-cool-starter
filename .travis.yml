@@ -1,6 +1,17 @@
 language: node_js
+
+os:
+  - linux
+  - osx
+# One day windows will work
+#  - windows
+  
 node_js:
+    - "8"
+    - "9"
     - "10"
+    - "11"
+    
 install:
     - npm install
 script:
@@ -10,13 +21,22 @@ cache:
         - "node_modules"
 notifications:
     email: true
-deploy:
-    provider: pages
-    skip-cleanup: true
-    local_dir: docs/.vuepress/dist
-    github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    repo: FriendlyUser/vuepress-theme-cool-starter
-    keep-history: true
-    target-branch: gh-pages
-    on:
-        branch: master
+
+jobs:
+  include:
+    - stage: docs release
+      node_js: "10"
+      script: 
+        - echo "Deploying to npm ..."
+        - npm install
+        - npm run docs:build
+      deploy:
+        provider: pages
+        skip-cleanup: true
+        local_dir: docs/.vuepress/dist
+        github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+        repo: FriendlyUser/vuepress-theme-cool-starter
+        keep-history: true
+        target-branch: gh-pages
+        on:
+            branch: master
