@@ -22,7 +22,7 @@
     "vue-chartkick": "^0.4.0",
     "vue-cute-timeline": "^1.2.5",
     "vue-good-table": "^2.16.0",
-    "vuepress-theme-cool": "^1.0-0-beta",
+    "vuepress-theme-cool": "^1.0.0-beta",
     "vuex": "^3.0.1"
   }
 }
