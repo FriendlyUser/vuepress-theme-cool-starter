@@ -3,8 +3,7 @@ language: node_js
 os:
   - linux
   - osx
-# One day windows will work
-#  - windows
+  - windows
   
 node_js:
     - "8"
@@ -30,7 +29,8 @@ jobs:
       script: 
         - echo "Deploying to npm ..."
         - npm install
-        - npm run docs:build
+        - npm install -g vuepress
+        - npm run build
       deploy:
         provider: pages
         skip-cleanup: true
