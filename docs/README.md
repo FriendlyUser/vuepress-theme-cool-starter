@@ -12,7 +12,13 @@ features:
 footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
-## ReadMe
+
+## Disclaimer
+
+Currently updated to Vuepress theme V1, issues may arise.
+
+[![Build Status](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter.svg?branch=master)](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter)
+## ReadMe 
 
 This is an example of how to use the `vuepress-theme-cool` vuepress theme, look into docs for example files.
 
@@ -30,5 +36,3 @@ To run:
 ## Customization
 
 Most of the customization is done in `config.js`, automatic navbar and sidebar navigation is available in `config-other.js`
-
-Some other good vuepress examples can be found at [vuepress-examples](https://vuepress-examples.netlify.com/)

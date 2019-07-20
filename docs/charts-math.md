@@ -4,7 +4,7 @@ title: Charts And Math
 
 ## Charts 
 
-These diagrams are created using one line of code and leveraging the (vue-chartkick)[https://github.com/ankane/vue-chartkick] library.
+These diagrams are created using one line of code and leveraging the [vue-chartkick](https://github.com/ankane/vue-chartkick) library.
 
 ```
 <bar-chart :data="[['Assignments', 10], ['Midterm', 35], ['Final', 55]]"></bar-chart>
@@ -46,6 +46,7 @@ These diagrams are created using one line of code and leveraging the (vue-chartk
 
 $x^2 + x_2 = x^2 + x_2$
 
+$$x^2 + x = x^2 + x$$
 See [katex](https://katex.org/docs/supported.html)
 
 ### Aside

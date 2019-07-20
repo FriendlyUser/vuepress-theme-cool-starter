@@ -3,8 +3,8 @@ language: node_js
 os:
   - linux
   - osx
-# One day windows will work
 #  - windows
+# windows doesn't work on travis
   
 node_js:
     - "8"
@@ -14,8 +14,9 @@ node_js:
     
 install:
     - npm install
+    - npm install -g vuepress
 script:
-    - npm run docs:build
+    - npm run build
 cache:
     directories:
         - "node_modules"
@@ -29,7 +30,8 @@ jobs:
       script: 
         - echo "Deploying to npm ..."
         - npm install
-        - npm run docs:build
+        - npm install -g vuepress
+        - npm run build
       deploy:
         provider: pages
         skip-cleanup: true
