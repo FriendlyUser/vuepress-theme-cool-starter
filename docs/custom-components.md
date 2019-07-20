@@ -91,7 +91,7 @@ Nice timeline :rocket:
 ## Comparsion 
 
 ```js
-<ProsCons
+<pros-cons
   intro="There are a couple of things we need to cover:"
   :good="[
     'Documentation Theme Based on Vue.',
@@ -104,7 +104,7 @@ Nice timeline :rocket:
   ]"
 />
 ```
-<ProsCons
+<pros-cons
   intro="There are a couple of things we need to cover:"
   :good="[
     'Documentation Theme Based on Vue.',

@@ -12,6 +12,11 @@ features:
 footer: MIT Licensed | Copyright © 2019-present David Li
 ---
 
+
+## Disclaimer
+
+Currently updated to Vuepress theme V1, issues may arise.
+
 ## ReadMe
 
 This is an example of how to use the `vuepress-theme-cool` vuepress theme, look into docs for example files.

@@ -13,6 +13,11 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
 	['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}]
   ],
+  plugins: [ 
+    '@vuepress/last-updated',
+    '@vuepress/back-to-top',
+    '@vuepress/pwa'
+   ],
   themeConfig: {
     logo: './myAvatar.png',
     sidebar: true,
@@ -55,20 +60,21 @@ module.exports = {
       }
     }
   },
+  plugins: {
+    '@vuepress/pwa': { serviceWorker: true,
+      updatePopup: {
+        message: "New content is available.",
+        buttonText: "Refresh"
+      }
+    }
+  },
   markdown: {
-    // options for markdown-it-anchor
-    anchor: { permalink: true },
-    // options for markdown-it-toc
-    toc: { includeLevel: [1, 2, 3, 4] },
-    config: md => {
-      // use more markdown-it plugins!
-      md.set({html: true})
-      md.use(require("markdown-it-katex"));
-      md.use(require("markdown-it-task-lists"));
-      md.use(require("markdown-it-plantuml"));
-      md.use(require("markdown-it-admonition"));
-      // use for easy syntax mermaid diagrams
- 
+    extendMarkdown: md => {
+      md.set({ html: true })
+      md.use(require('markdown-it-katex'))
+      md.use(require('markdown-it-plantuml'))
+      md.use(require('markdown-it-admonition'))
+      md.use(require('markdown-it-task-lists'))
     }
   }
 }
