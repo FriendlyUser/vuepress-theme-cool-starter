@@ -125,11 +125,11 @@ $$x^2=6.5*5$$
 !!!
 
 ```
-!!! quote Quotation
+!!! quote Qutation
 Quote 1.1
 !!!
 ```
-!!! quote Quotation
+!!! quote Qutation
 Quote 1.1
 !!!
 
