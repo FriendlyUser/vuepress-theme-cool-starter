@@ -5,7 +5,7 @@ const path = require('path')
 const util = require('util')
 
 module.exports = {
-  base: '/vuepress-theme-cool-starter/',
+  base: 'https://friendlyuser.github.io/vuepress-theme-cool-starter/',
   theme: 'cool',
   //dest: 'dist',
   head: [
