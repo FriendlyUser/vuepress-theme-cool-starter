@@ -1,6 +1,6 @@
 // .vuepress/config.js
 module.exports = {
-  base: '/',
+  base: 'https://friendlyuser.github.io/vuepress-theme-cool-starter/',
   theme: 'cool',
   //dest: 'dist',
   head: [
