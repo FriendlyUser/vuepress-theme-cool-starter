@@ -90,6 +90,9 @@ Nice timeline :rocket:
 
 ## Comparsion 
 
+<Quiz v-bind:quizNum=2 />
+
+What is going on?
 ```js
 <pros-cons
   intro="There are a couple of things we need to cover:"
