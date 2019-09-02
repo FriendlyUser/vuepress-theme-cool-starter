@@ -7,15 +7,7 @@
 
         <!--questionContainer-->
         <div class="questionContainer" v-if="questionIndex<quiz.questions.length" v-bind:key="questionIndex">
-
-
           <header>
-            <!-- try copying step by step https://codepen.io/mobihack-official/pen/EJpRXQ-->
-            <div class="progressContainer">
-              <progress class="progress is-info is-small" :value="(questionIndex/quiz.questions.length)*100" max="100">{{(questionIndex/quiz.questions.length)*100}}%</progress>
-              <p>{{(questionIndex/quiz.questions.length)*100}}% complete</p>
-            </div>
-
             <div class="shell">
               <div class="bar" :style="{width: questionIndex/quiz.questions.length*100 + '%' }">
                 <span>{{(questionIndex/quiz.questions.length)*100}}%</span>
@@ -61,12 +53,12 @@
     <div v-if="questionIndex >= quiz.questions.length" v-bind:key="questionIndex" class="quizCompleted has-text-centered">
       <!-- quizCompletedIcon: Achievement Icon -->
       <span class="icon">
-        <i class="fa" :class="score()> 3 ?'fa-check-circle-o is-active':'fa-times-circle'"></i>
+        <i class="fa" :class="score() > 3 ?'fa-check-circle-o is-active':'fa-times-circle'"></i>
       </span>
 
       <!--resultTitleBlock-->
       <h2 class="title">
-        You did {{ (score()>7?'an amazing':(score() < 4 ?'a poor':'a good')) }} job!
+        You did {{ (score() / quiz.questions.length  > 0.7 ?'an amazing':(score() / quiz.questions.length < 0.4 ?'a poor':'a good')) }} job!
       </h2>
       <p class="subtitle">
         Total score: {{ score() }} / {{ quiz.questions.length }}
@@ -117,14 +109,10 @@ export default {
   },
   methods: {
 		 restart: function(){
-        
-         this.questionIndex=0;
-         console.log(this.quiz)
+        this.questionIndex=0;
 		 		this.userResponses=Array(this.quiz.questions.length).fill(null);
 		 },
       selectOption: function(index) {
-         // Vue.set(this.userResponses, this.questionIndex, index);
-         console.log(this.userResponses);
          this.$set(this.userResponses, this.questionIndex, index);
       },
       next: function() {
@@ -139,7 +127,6 @@ export default {
       score: function() {
          var score = 0;
          for (let i = 0; i < this.userResponses.length; i++) {
-           console.log("Testing")
             if (
                typeof this.quiz.questions[i].responses[
                   this.userResponses[i]
@@ -149,6 +136,7 @@ export default {
                score = score + 1;
             }
          }
+         // calculate percentage
          return score;
       }
   }
@@ -200,23 +188,7 @@ export default {
   width: 60%;
   margin: 0 auto;
 }
-.progressContainer > progress {
-  margin: 0;
-  border-radius: 5rem;
-  overflow: hidden;
-  border: none;
-  color: #3d5afe;
-}
-.progressContainer > progress::-moz-progress-bar {
-  background: #3d5afe;
-}
-.progressContainer > progress::-webkit-progress-value {
-  background: #3d5afe;
-}
-header .progressContainer > p {
-  margin: 0;
-  margin-top: 0.5rem;
-}
+
 .titleContainer {
   text-align: center;
   margin: 0 auto;
