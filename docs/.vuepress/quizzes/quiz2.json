@@ -1,0 +1,41 @@
+{
+  "user": "Dave",
+  "questions": [
+     {
+        "text": "Who is the Batman",
+        "responses": [
+           {
+              "text": "Laughing Bat"
+           },
+           {
+              "text": "Bruce Wayne",
+              "correct": true
+           },
+           {
+              "text": "Dick Grayson"
+           },
+           {
+              "text": "None of the above"
+           }
+        ]
+     },
+     {
+        "text": "\"Yahoo\", \"Infoseek\" and \"Lycos\" are _________?",
+        "responses": [
+           {
+              "text": "Browsers "
+           },
+           {
+              "text": "Search Engines",
+              "correct": true
+           },
+           {
+              "text": "News Group"
+           },
+           {
+              "text": "None of the above"
+           }
+        ]
+     }
+  ]
+}
