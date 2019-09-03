@@ -87,10 +87,68 @@ An example timeline of the courses I took
 Nice timeline :rocket:
 
 
+## Quiz 
 
-## Comparsion 
+The way this is implemented requires the definition of `json` files containing a certain format.
+
+Such as and requires the component to manually import the json file of interest (may be revised later)
+
+```json
+{
+  "questions": [
+     {
+        "text": "Who is the Batman",
+        "responses": [
+           {
+              "text": "Laughing Bat"
+           },
+           {
+              "text": "Bruce Wayne",
+              "correct": true
+           },
+           {
+              "text": "Dick Grayson"
+           },
+           {
+              "text": "None of the above"
+           }
+        ]
+     },
+     {
+        "text": "\"Yahoo\", \"Infoseek\" and \"Lycos\" are _________?",
+        "responses": [
+           {
+              "text": "Browsers "
+           },
+           {
+              "text": "Search Engines",
+              "correct": true
+           },
+           {
+              "text": "News Group"
+           },
+           {
+              "text": "None of the above"
+           }
+        ]
+     }
+  ]
+}
+```
 
 <Quiz v-bind:quizNum=2 />
+
+## Details
+
+Styled details and summary html elements.
+
+<Details title="This is a title" content="This is the details html element" />
+
+```vue
+<Details title="This is a title" content="This is the details html element" />
+```
+## Comparsion 
+
 
 What is going on?
 ```js
