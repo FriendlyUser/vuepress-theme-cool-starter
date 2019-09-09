@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "chart.js": "^2.7.2",
-    "mermaid": "^8.1.0",
+    "mermaid": "^8.2.6",
     "vue-chartkick": "^0.4.0",
     "vue-cute-timeline": "^1.2.5",
     "vue-good-table": "^2.16.0",
