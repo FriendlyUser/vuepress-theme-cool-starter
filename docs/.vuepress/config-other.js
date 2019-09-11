@@ -5,13 +5,13 @@ const path = require('path')
 const util = require('util')
 
 module.exports = {
-  base: 'https://friendlyuser.github.io/vuepress-theme-cool-starter/',
+  base: '/vuepress-theme-cool-starter/',
   theme: 'cool',
   //dest: 'dist',
   head: [
     ['link', { rel: 'icon', href: '/faviconCustom.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
-	['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}]
+	  ['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}]
   ],
   plugins: [ 
     '@vuepress/last-updated',
@@ -19,19 +19,11 @@ module.exports = {
     '@vuepress/pwa'
    ],
   themeConfig: {
-    logo: './myAvatar.png',
-    sidebar: true,
+    // logo: './myAvatar.png',
+    sidebar: genSideBar('.'),
     sidebarDepth: 2,
-    displayAllHeaders: true, // Default: false
+    displayAllHeaders: true, // Default: false themeConfig: {
     nav:  genNavBarList(),
-    // consider making this sidebar generation completely automatic, but would I prefer to make some control over titling and selected folders that are displayed.   
-    // The first and the last string need to match in the sidebar.
-    sidebar: { 
-      '/TaskList/': genSideBarConfigFolder('Task List','/TaskList/'),
-      '/ReadingList/': genSideBarConfigFolder('Reading List','/ReadingList/'),
-      '/Test/': genSideBarConfigFolder('Epic Test','/Test/')
-    },
-    sidebarDepth: 2,
     lastUpdated: 'Last Updated', // string | boolean
     // Assumes GitHub. Can also be a full GitLab url.
     repo: 'FriendlyUser/vuepress-theme-cool-starter',
@@ -131,7 +123,7 @@ function getFilesInDirBase(directoryName) {
         
         // Add README as '', and everything else as standard
         if (baseName.toUpperCase() == 'README') {
-            files.push('')
+            files.push('Home')
         }
         else {
             files.push(baseName)
@@ -142,7 +134,7 @@ function getFilesInDirBase(directoryName) {
 }
 
 // pass in the folder relative to the folder docs
-function genSideBarConfigFolder (titleName,directoryName) {
+function genSideBarConfigFolder (titleName, directoryName) {
     const rawFilePaths = getFilesInDirBase(directoryName)
     return [
         {
@@ -153,20 +145,40 @@ function genSideBarConfigFolder (titleName,directoryName) {
     ]
 }
 
+function genSideBar (directoryName) {
+  const dirNames = getFilesInDirBase(directoryName)
+  let markdownArray = []
+  for (var i = 0; i < dirNames.length; i++) {
+    let stringValue = dirNames[i].toString()
+    if(stringValue === 'Home' || stringValue === '') {
+      markdownArray.push('')
+    } else {
+      markdownArray.push(stringValue)
+    }
+  }
+  const sideBarConfig = {
+    '/': markdownArray
+  }
+  console.log(sideBarConfig)
+  return sideBarConfig
+}
+
 // doesn't work, fix later, can't figure out how to generate { text: link:} recursively? Or maybe have another function that returns text: link 
  function genNavBarList() {
-    const dirNames = getDirectories('docs')
+    let dirNames = []
     // navbar settings
+    dirNames = getFilesInDirBase('.')
     let navBarNames = [];
-    
-    navBarNames.push(genNavBarItem('Home','/'))
-    console.log(navBarNames)
+
     var numOfDirs = dirNames.length;
     for (var i = 0; i < numOfDirs; i++) {
-        // not last entry
         let stringValue = dirNames[i].toString()
-        let linkValue = '/'+stringValue+'/'
-        console.log(stringValue)
+        // convert - to capitialization
+        stringValue = transformToUpperCase(stringValue)
+        let linkValue = '/'
+        if (stringValue !== 'Home') {
+          linkValue = `/${stringValue}/` 
+        }
         
         // @todo change loop to iterate for nested directories
         if (true) {
@@ -177,13 +189,7 @@ function genSideBarConfigFolder (titleName,directoryName) {
             //navBarNames = navBarNames + "{ text : \'" + stringValue + "\', " + "link: " + "\'/" + stringValue + "/\'}, \n";
         }
     }
-    fs.writeFile("docs/.vuepress/configNavbarDirAuto.txt", util.inspect(navBarNames, {depth: null}), function(err) {
-    if(err) {
-        return console.log(err);
-    }
-    console.log("navbar list directory file is saved.");
-}); 
-    return  navBarNames
+    return navBarNames
     
 }
 
@@ -192,4 +198,14 @@ function genNavBarItem(textValue, linkValue) {
         text: textValue,
         link: linkValue
     }
+}
+
+function transformToUpperCase(str) {
+  let upperString = str
+  upperString = upperString.replace(/-/g, ' ');
+  upperString = upperString.split(" ");
+  for (var i = 0, x = upperString.length; i < x; i++) {
+    upperString[i] = upperString[i][0].toUpperCase() + upperString[i].substr(1);
+  }
+  return upperString.join(" ");
 }
