@@ -7,8 +7,8 @@
   "author": "FriendlyUser <davidli01234@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "docs:dev": "node node_modules/vuepress/cli.js dev docs",
-    "docs:build": "node node_modules/vuepress/cli.js build docs",
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "npx vuepress build docs",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
