@@ -4,7 +4,7 @@
   "main": "index.js",
   "description": "A cool theme that has integrated some vue components, charts via charts, and markdown based diagrams plantuml and mermaid.",
   "repository": "https://github.com/FriendlyUser/vuepress-theme-cool-starter",
-  "author": "FriendlyUser <davidli01234@gmail.com>",
+  "author": "FriendlyUser <davidli012345@gmail.com>",
   "license": "ISC",
   "scripts": {
     "docs:dev": "npx vuepress dev docs",
