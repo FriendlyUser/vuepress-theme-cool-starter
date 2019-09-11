@@ -1,20 +1,20 @@
 {
   "name": "vuepress-theme-cool-starter",
-  "version": "2.0.0-beta",
+  "version": "2.0.0",
   "main": "index.js",
   "description": "A cool theme that has integrated some vue components, charts via charts, and markdown based diagrams plantuml and mermaid.",
   "repository": "https://github.com/FriendlyUser/vuepress-theme-cool-starter",
-  "author": "FriendlyUser <davidli01234@gmail.com>",
+  "author": "FriendlyUser <davidli012345@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "docs:dev": "node node_modules/vuepress/cli.js dev docs",
-    "docs:build": "node node_modules/vuepress/cli.js build docs",
+    "docs:dev": "npx vuepress dev docs",
+    "docs:build": "npx vuepress build docs",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "dependencies": {
     "chart.js": "^2.7.2",
-    "mermaid": "^8.1.0",
+    "mermaid": "^8.2.6",
     "vue-chartkick": "^0.4.0",
     "vue-cute-timeline": "^1.2.5",
     "vue-good-table": "^2.16.0",
