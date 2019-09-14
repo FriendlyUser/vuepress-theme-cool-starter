@@ -11,7 +11,7 @@ module.exports = {
   plugins: [ 
    '@vuepress/last-updated',
    '@vuepress/back-to-top',
-   '@vuepress/pwa'
+   '@vuepress/plugin-pwa'
   ],
   themeConfig: {
     // logo: './myAvatar.png',
