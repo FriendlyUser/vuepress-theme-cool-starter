@@ -7,6 +7,59 @@ List of diagrams possible with `vuepress-theme-cool`
 ## Mermaid
 
 
+```
+<mermaid>
+graph TD
+  A[Silvester] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[Car]
+  C -->|Four| F[Mac]
+</mermaid>
+```
+
+<mermaid>
+graph TD
+  A[Silvester] -->|Get money| B(Go shopping)
+  B --> C{Let me think}
+  C -->|One| D[Laptop]
+  C -->|Two| E[iPhone]
+  C -->|Three| F[Car]
+  C -->|Four| F[Mac]
+</mermaid>
+
+
+```js
+sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you?
+    alt is sick
+        Bob->>Alice: Not so good :(
+    else is well
+        Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob->>Alice: Thanks for asking
+    end
+```
+
+<mermaid>
+sequenceDiagram
+    Alice->>Bob: Hello Bob, how are you?
+    alt is sick
+        Bob->>Alice: Not so good :(
+    else is well
+        Bob->>Alice: Feeling fresh like a daisy
+    end
+    opt Extra response
+        Bob->>Alice: Thanks for asking
+    end
+</mermaid>
+
+---
+
+## PlantUml
+
 ```js 
 @startuml
 Bob -> Alice : hello
@@ -49,35 +102,6 @@ legend right
 endlegend
 @endmindmap
 @enduml
-
-
-```
-<mermaid>
-graph TD
-  A[Silvester] -->|Get money| B(Go shopping)
-  B --> C{Let me think}
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[Car]
-  C -->|Four| F[Mac]
-</mermaid>
-```
-
-<mermaid>
-graph TD
-  A[Silvester] -->|Get money| B(Go shopping)
-  B --> C{Let me think}
-  C -->|One| D[Laptop]
-  C -->|Two| E[iPhone]
-  C -->|Three| F[Car]
-  C -->|Four| F[Mac]
-</mermaid>
-
-
----
-
-
-## PlantUml
 
 ```js
 @startuml
