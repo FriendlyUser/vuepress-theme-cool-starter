@@ -292,4 +292,4 @@ strict digraph cool {
 ### References
 
 - [Mermaid](https://github.com/knsv/mermaid)
-- [Katex](https://github.com/Khan/KaTeX)
+- [KaTeX](https://github.com/Khan/KaTeX)
