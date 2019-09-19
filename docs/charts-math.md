@@ -2,7 +2,9 @@
 title: Charts And Math
 ---
 
-## Charts 
+# Charts And Math
+
+## Charts
 
 These diagrams are created using one line of code and leveraging the [vue-chartkick](https://github.com/ankane/vue-chartkick) library.
 
@@ -11,7 +13,7 @@ These diagrams are created using one line of code and leveraging the [vue-chartk
 ```
 <bar-chart :data="[['Assignments', 10], ['Midterm', 35], ['Final', 55]]"></bar-chart>
 
-```js 
+```js
 <pie-chart :data="[['Assignments', 10], ['Midterm', 35], ['Final', 55]]"></pie-chart>
 ```
 
@@ -47,9 +49,13 @@ These diagrams are created using one line of code and leveraging the [vue-chartk
 $x^2 + x_2 = x^2 + x_2$
 
 $$x^2 + x = x^2 + x$$
-See [katex](https://katex.org/docs/supported.html)
+
+See [KaTeX](https://katex.org/docs/supported.html).
 
 ### Aside
 
-Standard markdown can be used for vuepress, 
+Standard Markdown can be used in VuePress.
+
+```
 *Random Link*, See [my website](http://url.surge.sh/1)
+```

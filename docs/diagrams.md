@@ -1,6 +1,7 @@
 ---
 title: Diagrams
 ---
+
 # Diagrams
 
 List of diagrams possible with `vuepress-theme-cool`
@@ -60,7 +61,7 @@ sequenceDiagram
 
 ## PlantUml
 
-```js 
+```js
 @startuml
 Bob -> Alice : hello
 @enduml
@@ -69,7 +70,7 @@ Bob -> Alice : hello
 @startuml
 Bob -> Alice : hello
 @enduml
-  
+
 <br />
 
 @startuml
@@ -123,7 +124,7 @@ fr ..> m
 m ..> a
 a ..> fm : no
 a -> pp : yes
-pp -> o 
+pp -> o
 @enduml
 ```
 
@@ -146,11 +147,11 @@ pp -> o
   m ..> a
   a ..> fm : no
   a -> pp : yes
-  pp -> o 
+  pp -> o
 @enduml
 
-```js 
-@startuml 
+```js
+@startuml
   |Required Steps|
   :"Start Assignment";
   |#AntiqueWhite|Documentation|
@@ -165,10 +166,10 @@ pp -> o
   :"Update Local Repo";
   :"Update CENG4B Notes;
   stop
-@enduml 
+@enduml
 ```
 
-@startuml 
+@startuml
 |Required Steps|
 :"Start Assignment";
 |#AntiqueWhite|Documentation|
@@ -183,11 +184,11 @@ pp -> o
 :"Update Local Repo";
 :"Update CENG4B Notes;
 stop
-@enduml 
+@enduml
 
-```js 
-  @startuml 
- (*) --> [File System ] "input.json " 
+```js
+  @startuml
+ (*) --> [File System ] "input.json "
   note left
   1. Read Entire File into memory
   end note
@@ -202,7 +203,7 @@ stop
   JSON or CSV, we’re limited
   by the max string size
   in Node.js: around 536 MB
-  as of Node v8 
+  as of Node v8
   end note
   --> [File System] "output.json"
   note left
@@ -212,8 +213,8 @@ stop
   @enduml
 ```
 
-@startuml 
- (*) --> [File System ] "input.json " 
+@startuml
+ (*) --> [File System ] "input.json "
   note left
   1. Read Entire File into memory
   end note
@@ -228,7 +229,7 @@ stop
   JSON or CSV, we’re limited
   by the max string size
   in Node.js: around 536 MB
-  as of Node v8 
+  as of Node v8
   end note
   --> [File System] "output.json"
   note left
@@ -238,7 +239,7 @@ stop
 @enduml
 
 
-### Solidity Diagraph 
+### Solidity Diagraph
 @startuml
 digraph foo {
   node [style=rounded]
@@ -249,8 +250,8 @@ digraph foo {
   node1 -> node2 -> node3
 }
 @enduml
- 
-```js 
+
+```js
 @startuml
 strict digraph cool {
   exists [color=blue]
