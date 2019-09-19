@@ -1,5 +1,9 @@
 // .vuepress/config.js
 module.exports = {
+  plugins: ['@vuepress/back-to-top', '@vuepress/pwa', {
+    serviceWorker: true,
+    updatePopup: true
+  }],
   base: '/vuepress-theme-cool-starter/',
   theme: 'cool',
   //dest: 'dist',
@@ -7,16 +11,6 @@ module.exports = {
     ['link', { rel: 'icon', href: '/faviconCustom.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
 	  ['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}]
-  ],
-  plugins: [
-    ['@vuepress/search', {
-      searchMaxSuggestions: 10
-    },
-    '@vuepress/back-to-top',
-    '@vuepress/pwa', {
-      serviceWorker: true,
-      updatePopup: true
-    }]
   ],
   themeConfig: {
     // logo: './myAvatar.png',
