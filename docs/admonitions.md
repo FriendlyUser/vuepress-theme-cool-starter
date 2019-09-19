@@ -6,15 +6,16 @@ title: Admonitions
 
 [[toc]]
 
- 
+
 ## Examples
-The kinds of admonitions available include 
 
-The icons for the admonitions use google material icons. 
-note, abstract, info, tip, success, question, warning, failure, danger, bug, example, quote.
-The icons are styled as in `style.styl` (will be different in vuepress 1.0), and material icons are loaded in `config.js` as a stylesheet.
+The icons for the admonitions use Google Material Icons.
 
-To use admonitions, examples are below
+Available admonitions: note, abstract, info, tip, success, question, warning, failure, danger, bug, example, quote.
+
+The icons are styled as in `style.styl` (will be different in VuePress 1.0), and material icons are loaded in `config.js` as a stylesheet.
+
+To use admonitions, see examples below:
 
 ```
 !!! <admonition type> <Admonition title>
@@ -24,12 +25,12 @@ Admonition content
 
 ```
 !!! note Testing Notes
-Good Note 
+Good Note
 !!!
 ```
 
 !!! note Testing Notes
-Good Note 
+Good Note
 !!!
 
 ```
@@ -64,12 +65,12 @@ This is a tip.
 
 ```
 !!! success SUCCESS Thing
-This is a success box 
+This is a success box
 !!!
 ```
 
 !!! success SUCCESS Thing
-This is a success box 
+This is a success box
 !!!
 
 !!! question Cool Question
@@ -77,13 +78,13 @@ I have questions
 !!!
 
 ```
-!!! warning A good warning 
-Example of a warning 
+!!! warning A good warning
+Example of a warning
 !!!
 ```
 
-!!! warning A good warning 
-Example of a warning 
+!!! warning A good warning
+Example of a warning
 !!!
 
 ```
@@ -97,30 +98,30 @@ Fail in life.
 !!!
 
 ```
-!!! danger More danger 
+!!! danger More danger
 DANGEROUS
 !!!
 ```
 
-!!! danger More danger 
+!!! danger More danger
 DANGEROUS
 !!!
 
 ```
-!!! bug Software Bug 
-I love bugs 
+!!! bug Software Bug
+I love bugs
 !!!
 ```
-!!! bug Software Bug 
-I love bugs 
+!!! bug Software Bug
+I love bugs
 !!!
 
 ```
-!!! example Example 1.1 
+!!! example Example 1.1
 $$x^2=6.5*5$$
 !!!
 ```
-!!! example Example 1.1 
+!!! example Example 1.1
 $$x^2=6.5*5$$
 !!!
 
