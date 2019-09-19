@@ -8,10 +8,15 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
 	  ['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}]
   ],
-  plugins: [ 
-   '@vuepress/last-updated',
-   '@vuepress/back-to-top',
-   '@vuepress/plugin-pwa'
+  plugins: [
+    ['@vuepress/search', {
+      searchMaxSuggestions: 10
+    },
+    '@vuepress/back-to-top',
+    '@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: true
+    }]
   ],
   themeConfig: {
     // logo: './myAvatar.png',
@@ -60,14 +65,6 @@ module.exports = {
     resolve: {
       alias: {
         '@alias': '../img'
-      }
-    }
-  },
-  plugins: {
-    '@vuepress/pwa': { serviceWorker: true,
-      updatePopup: {
-        message: "New content is available.",
-        buttonText: "Refresh"
       }
     }
   },
