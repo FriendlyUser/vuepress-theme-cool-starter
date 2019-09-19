@@ -30,8 +30,7 @@ jobs:
       script: 
         - echo "Deploying to npm ..."
         - npm install
-        - npm install -g vuepress
-        - npm run build
+        - npm run docs:build
       deploy:
         provider: pages
         skip-cleanup: true
