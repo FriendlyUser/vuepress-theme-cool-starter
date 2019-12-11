@@ -57,6 +57,27 @@ sequenceDiagram
     end
 </mermaid>
 
+<mermaid>
+stateDiagram
+    [*] --> Still
+    Still --> [*]
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+</mermaid>
+
+asdasdasd
+
+sadad
+
+
+<mermaid>
+pie
+	"Dogs" : 386
+	"Cats" : 85
+	"Rats" : 15 
+</mermaid>
 ---
 
 ## PlantUml
