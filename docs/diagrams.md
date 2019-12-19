@@ -46,15 +46,61 @@ sequenceDiagram
 
 <mermaid>
 sequenceDiagram
-    Alice->>Bob: Hello Bob, how are you?
-    alt is sick
-        Bob->>Alice: Not so good :(
-    else is well
-        Bob->>Alice: Feeling fresh like a daisy
-    end
-    opt Extra response
-        Bob->>Alice: Thanks for asking
-    end
+  Alice->>Bob: Hello Bob, how are you?
+  alt is sick
+      Bob->>Alice: Not so good :(
+  else is well
+      Bob->>Alice: Feeling fresh like a daisy
+  end
+  opt Extra response
+      Bob->>Alice: Thanks for asking
+  end
+</mermaid>
+
+```js
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+```
+<mermaid>
+gantt
+section Section
+Completed :done,    des1, 2014-01-06,2014-01-08
+Active        :active,  des2, 2014-01-07, 3d
+Parallel 1   :         des3, after des1, 1d
+Parallel 2   :         des4, after des1, 1d
+Parallel 3   :         des5, after des3, 1d
+Parallel 4   :         des6, after des4, 1d
+</mermaid>
+
+
+### Mermaid 8.4.3
+
+Newer Versions of mermaid are required for these diagrams
+
+```
+stateDiagram
+  [*] --> Still
+  Still --> [*]
+  Still --> Moving
+  Moving --> Still
+  Moving --> Crash
+  Crash --> [*]
+```
+
+<mermaid>
+stateDiagram
+  [*] --> Still
+  Still --> [*]
+  Still --> Moving
+  Moving --> Still
+  Moving --> Crash
+  Crash --> [*]
 </mermaid>
 
 ---
