@@ -78,6 +78,11 @@ Parallel 3   :         des5, after des3, 1d
 Parallel 4   :         des6, after des4, 1d
 </mermaid>
 
+
+### Mermaid 8.4.3
+
+Newer Versions of mermaid are required for these diagrams
+
 ```
 stateDiagram
   [*] --> Still
@@ -87,6 +92,7 @@ stateDiagram
   Moving --> Crash
   Crash --> [*]
 ```
+
 <mermaid>
 stateDiagram
   [*] --> Still
@@ -97,18 +103,6 @@ stateDiagram
   Crash --> [*]
 </mermaid>
 
-```
-pie
-	"Dogs" : 386
-	"Cats" : 85
-	"Rats" : 15 
-```
-<mermaid>
-pie
-	"Dogs" : 386
-	"Cats" : 85
-	"Rats" : 15 
-</mermaid>
 ---
 
 ## PlantUml
