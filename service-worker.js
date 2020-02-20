@@ -27,7 +27,7 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "86827c8dd0ac71f7567d5b0dbb702d51"
+    "revision": "11d91114653f6a7665479cd6c0c7d534"
   },
   {
     "url": "admonitions.html",
