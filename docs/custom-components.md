@@ -212,9 +212,6 @@ The tasks listed below are expected to be done by the end of the term ENGR 004, 
 <span class="badge badge-default">New</span>
 
 <span class="badge error">ERROR</span>
-$x^2=4$
-
-$$x^5 = 5$$
 
 ## Build-in admonitions <Badge vertical="middle">Middle badge</Badge>
 
@@ -244,21 +241,3 @@ This is a dangerous warning
 
 Some other good examples can be found at https://vuepress-examples.netlify.com/
 
-## ReadMe
-
-This is an example of how to use the `vuepress-theme-cool` vuepress theme, look into docs for example files.
-
-## Installation and Running
-
-To install:
-
-`npm install`
-
-To run:
-
-`npm run docs:dev`
-
-
-## Customization
-
-Most of the customization is done in `config.js`, automatic navbar and sidebar navigation is available in `config-other.js`
