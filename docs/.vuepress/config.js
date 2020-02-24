@@ -10,6 +10,11 @@ module.exports = {
   head: [
     ['link', { rel: 'icon', href: '/faviconCustom.ico' }],
     ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css' }],
+    ['link', { rel: 'stylesheet', 
+      href: 'https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css',
+      integrity: "sha384-zB1R0rpPzHqg7Kpt0Aljp8JPLqbXI3bhnPWROx27a9N0Ll6ZP/+DiW/UqRcLbRjq",
+      crossorigin: "anonymous"
+    }],
 	  ['link', {href: 'https://fonts.googleapis.com/icon?family=Material+Icons', rel :'stylesheet'}]
   ],
   themeConfig: {
@@ -65,7 +70,8 @@ module.exports = {
   markdown: {
     extendMarkdown: md => {
       md.set({ html: true })
-      md.use(require('markdown-it-katex'))
+      md.use(require('markdown-it-katex')),
+      md.use(require('@liradb2000/markdown-it-katex')),
       md.use(require('markdown-it-plantuml'))
       md.use(require('markdown-it-admonition'))
     }

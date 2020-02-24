@@ -7,12 +7,13 @@
   "author": "FriendlyUser <davidli012345@gmail.com>",
   "license": "ISC",
   "scripts": {
-    "docs:dev": "npx vuepress dev docs",
-    "docs:build": "npx vuepress build docs",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "dev": "vuepress dev docs",
     "build": "vuepress build docs"
   },
   "dependencies": {
+    "@liradb2000/markdown-it-katex": "^2.0.7",
     "vuepress-theme-cool": "^1.3.0"
   },
   "devDependencies": {
