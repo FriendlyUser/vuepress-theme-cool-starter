@@ -29,8 +29,10 @@ jobs:
       node_js: "10"
       script: 
         - echo "Deploying to npm ..."
+        - chmod 700 addAds.sh && ./addAds.sh
         - npm install
         - npm run docs:build
+        - cp ads.txt docs/.vuepress/dist || true
       deploy:
         provider: pages
         skip-cleanup: true
