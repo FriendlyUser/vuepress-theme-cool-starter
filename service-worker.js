@@ -27,15 +27,15 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "6fbe09c5e2ba9a08f660d73ba0c4639f"
+    "revision": "c667825bc367720a5affea20c9774137"
   },
   {
     "url": "admonitions.html",
-    "revision": "bc3752e0d10ae33213b2ae1c0600416b"
+    "revision": "2e51e8aabf8f761b8129241a91099e49"
   },
   {
-    "url": "assets/css/0.styles.f62d05c6.css",
-    "revision": "add0e9bfee54b6aac893f5dffe43c146"
+    "url": "assets/css/0.styles.4af44b62.css",
+    "revision": "40803a96c6eede13cb57a96dfb4322db"
   },
   {
     "url": "assets/img/search.83621669.svg",
@@ -110,24 +110,24 @@ self.__precacheManifest = [
     "revision": "3080cc823bc9746a0ceb0114572247de"
   },
   {
-    "url": "assets/js/app.dcc40fb3.js",
-    "revision": "9ace23b032355ead9e4b0c2c092bba82"
+    "url": "assets/js/app.37a68944.js",
+    "revision": "f3f4b54c91a11e759a7f5ff5961fae08"
   },
   {
     "url": "charts-math.html",
-    "revision": "63e34917d80e566060543447dcf49741"
+    "revision": "47b6946d8c0e5294f330f6c9925ee645"
   },
   {
     "url": "custom-components.html",
-    "revision": "508d36522ca29c7d69233dce24be6463"
+    "revision": "6ed4fe11817f9c1aa1e02c7b8ee11cd4"
   },
   {
     "url": "diagrams.html",
-    "revision": "ae23592a97edda9fd6b16bb22dcb97c2"
+    "revision": "521867fece45836a5b40d36fd89ea44b"
   },
   {
     "url": "index.html",
-    "revision": "3f402afdac5ab1b00aa99be6d863c2de"
+    "revision": "d94d538240ce2d96af44ebe7a4d415a4"
   },
   {
     "url": "myAvatar.png",
