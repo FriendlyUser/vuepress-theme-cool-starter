@@ -15,7 +15,7 @@ footer: MIT Licensed | Copyright © 2019-present David Li
 
 ## Disclaimer
 
-Currently updated to Vuepress theme V1, issues may arise. This repo has installed `vuepress-theme-cool@1.2.0`
+This repo has installed `vuepress-theme-cool@latest`
 
 [![Build Status](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter.svg?branch=master)](https://travis-ci.org/FriendlyUser/vuepress-theme-cool-starter)
 ## ReadMe 
