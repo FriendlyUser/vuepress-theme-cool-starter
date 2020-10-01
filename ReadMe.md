@@ -27,10 +27,15 @@ To install:
 
 `npm install`
 
-To run:
+To run with vuepress installed locally:
+
+`npm install vuepress --save-dev`
 
 `npm run docs:dev`
 
+To run with vuepress installed globally:
+
+`npm run dev`
 
 ## Customization
 
