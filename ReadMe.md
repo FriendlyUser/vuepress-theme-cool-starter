@@ -9,13 +9,14 @@ features:
   details: Leverage chartjs and katex 
 - title: Diagramming tools
   details: Integrated with mermaid and plantuml
-footer: MIT Licensed | Copyright © 2019-present David Li
+footer: MIT Licensed | Copyright © 2020-present David Li
 ---
 
 
 ## Disclaimer
 
-Currently updated to Vuepress theme V1, issues may arise.
+As of `vuepress@1.7.1` I cannot get this starter template running with vuepress installed globally, it throws an error message for me.
+
 
 ## ReadMe
 
@@ -33,9 +34,6 @@ To run with vuepress installed locally:
 
 `npm run docs:dev`
 
-To run with vuepress installed globally:
-
-`npm run dev`
 
 ## Customization
 
