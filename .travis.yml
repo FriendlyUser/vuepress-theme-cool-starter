@@ -5,13 +5,6 @@ os:
   - osx
 #  - windows
 # windows doesn't work on travis
-  
-node_js:
-    - "10"
-    - "11"
-    - "12"
-    - "13"
-    
     
 install:
     - npm install
@@ -27,7 +20,7 @@ notifications:
 jobs:
   include:
     - stage: docs release
-      node_js: "10"
+      node_js: "14"
       script: 
         - echo "Deploying to npm ..."
         - chmod 700 addAds.sh && ./addAds.sh
