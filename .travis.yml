@@ -5,7 +5,10 @@ os:
   - osx
 #  - windows
 # windows doesn't work on travis
-    
+node_js:
+  - 14
+  - 15
+ 
 install:
     - npm install
     - npm install --save vuepress
