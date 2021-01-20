@@ -27,11 +27,11 @@ self.addEventListener('message', (event) => {
 self.__precacheManifest = [
   {
     "url": "404.html",
-    "revision": "e22f61a110146639d3cc8b6c172a6a09"
+    "revision": "b5709ce6ca0b5506fb38674907c37548"
   },
   {
     "url": "admonitions.html",
-    "revision": "4658daa59c1116980ce37da537381b82"
+    "revision": "99ebed75659d6f613021501260be4e1e"
   },
   {
     "url": "assets/css/0.styles.ec896d5d.css",
@@ -82,8 +82,8 @@ self.__precacheManifest = [
     "revision": "2d1380d784667f6087fc55115e4297b3"
   },
   {
-    "url": "assets/js/2.06f89d28.js",
-    "revision": "aa7f2190ea0ae343d23686339c37e0cb"
+    "url": "assets/js/2.861e46de.js",
+    "revision": "df5b6ce2f2d90c5b2e2f97966fea027c"
   },
   {
     "url": "assets/js/20.d7ce5e13.js",
@@ -94,8 +94,8 @@ self.__precacheManifest = [
     "revision": "1247313e7ecdbd8baad75931528229cc"
   },
   {
-    "url": "assets/js/3.554129e4.js",
-    "revision": "29cec3665f00d8f3918586bb91a4fe4c"
+    "url": "assets/js/3.519ec650.js",
+    "revision": "cb50036795a4f16533be250e896407aa"
   },
   {
     "url": "assets/js/4.36b97fe7.js",
@@ -122,24 +122,24 @@ self.__precacheManifest = [
     "revision": "1c7e83af3002b4ce628b39813913bc06"
   },
   {
-    "url": "assets/js/app.03ea8006.js",
-    "revision": "ae48d6e48ec5698828af8943d69a4570"
+    "url": "assets/js/app.ba712f73.js",
+    "revision": "3da010dfb4af12f1709e3f6d166d6846"
   },
   {
     "url": "charts-math.html",
-    "revision": "458c294813a5511913856c819be684ab"
+    "revision": "a4560314a1e5cb97cc7fb5d081c2b8b2"
   },
   {
     "url": "custom-components.html",
-    "revision": "359787c8dcafb06a53b0bf0beeb519be"
+    "revision": "638104b348d627e9383a788c6e05419c"
   },
   {
     "url": "diagrams.html",
-    "revision": "93b5a7d2421f0420062b4c9e9ce7974e"
+    "revision": "1ead441808a7efd95b93a4d18adcac8e"
   },
   {
     "url": "index.html",
-    "revision": "9738632ab94313e46623442134e784c4"
+    "revision": "96f993559f289fb1d8942f028d133da0"
   },
   {
     "url": "myAvatar.png",
