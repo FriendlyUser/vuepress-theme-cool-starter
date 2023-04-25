@@ -1,3 +1,6 @@
 node_modules
 yarn-error.lock
 *.zip
+vuepress-theme-cool
+docs/.vuepress/.cache
+docs/.vuepress/.temp
